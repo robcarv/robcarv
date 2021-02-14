@@ -1,0 +1,4 @@
+- 👋 Hi, I’m @robcarv as know by @chch_changes
+- 👀 I’m interested in Databases, python, machine leraning
+- 🌱 I’m currently learning python, pandas and datascience
+- 💞️ 
