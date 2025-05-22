@@ -26,10 +26,9 @@
 
 ✨ Always eager to learn and collaborate on innovative projects!  
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=robcarv)](https://github.com/robcarv/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=robcarv)](https://github.com/robcarv/github-readme-stats) [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=robcarv)](https://github.com/robcarv/github-readme-stats)
 
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=robcarv)](https://github.com/robcarv/github-readme-stats)
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ffflabs)](https://github.com/robcarv/github-readme-stats)
 
 
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=robcarv)](https://github.com/robcarv/github-readme-stats)
