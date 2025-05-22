@@ -1,6 +1,6 @@
 # 🇮🇪 **Hey there! I'm Robert**  
 *(aka @chch_changes in the land of leprechauns and broken code)*  
-🛠️ Full-time back-end wizard | Part-time problem crusher
+🛠️ Full-time developer and automation engineer  wizard | Part-time problem crusher
 💼 Currently solving puzzles at a company that starts with I and ends with M (spoiler: it's 🟦🟡)  
 
 ---
@@ -40,7 +40,7 @@
 
 # 🇧🇷 **E aí, eu sou o Robert!**  
 *(também conhecido como @chch_changes no mundo da mentira digital)*  
-🛠️ Dev back-end  
+🛠️ Dev  and automation engineer  
 💼 Atualmente fazendo mágica numa empresa que começa com I e termina com M I*M
 
 ---
