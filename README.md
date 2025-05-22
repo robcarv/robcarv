@@ -1,6 +1,6 @@
-# 🇺🇸 **Hey there! I'm Robert**  
-*(aka @chch_changes in the multiverse of madness)*  
-🛠️ Full-time back-end wizard | Part-time problem crusher  
+# 🇮🇪 **Hey there! I'm Robert**  
+*(aka @chch_changes in the land of leprechauns and broken code)*  
+🛠️ Full-time back-end wizard | Part-time problem crusher
 💼 Currently solving puzzles at a company that starts with I and ends with M (spoiler: it's 🟦🟡)  
 
 ---
