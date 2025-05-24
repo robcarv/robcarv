@@ -1,4 +1,4 @@
-# 🇮🇪 **Hey there! I'm Robert**  
+# 🇮🇪 **Hey hey  there! I'm Robert**  
 *(aka @chch_changes in the land of leprechauns and broken code)*  
 🛠️ Full-time developer and automation engineer  wizard | Part-time problem crusher
 💼 Currently solving puzzles at a company that starts with I and ends with M (spoiler: it's 🟦🟡)  
