@@ -8,15 +8,15 @@
 ### ⚙️ **My Toolbox**  
 ![Databases](https://img.shields.io/badge/-Databases-000?style=flat&logo=postgresql) T-SQL, Db2, Oracle  
 ![Code](https://img.shields.io/badge/-Code-000?style=flat&logo=python) Python, ADVPL, Java, esql  
-![DevOps](https://img.shields.io/badge/-DevOps-000?style=flat&logo=docker) Docker, K8s, OpenShift  
-![Cloud](https://img.shields.io/badge/-Cloud-000?style=flat&logo=azure-devops) Azure, Terraform, Jenkins  
+![DevOps](https://img.shields.io/badge/-DevOps-000?style=flat&logo=docker) Docker, K8s, OpenShift, Ansible, Vagrant
+![Cloud](https://img.shields.io/badge/-Cloud-000?style=flat&logo=azure-devops) Azure, IBM Cloud,Terraform,   
 
 ---
 
 ### 🧠 **Currently Sticking My Nose Into...**  
 - 🚀 DevOps: Terraform/Ansible dark arts ("Why isn't this working?!" edition)  
 - ☁️ Cloud: Making it rain (code) on AWS/Azure/IBM Cloud  
-- 🤖 Automation: Building army of bots to steal my own job  
+- 🤖 Automation: Building an army of bots to steal my own job  
 
 ---
 
