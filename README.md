@@ -30,9 +30,6 @@
 
 ### 📊 **Code Chronicles**  
 <a href="https://github.com/robcarv">
-  <img height=165 align="center" src="https://github-readme-stats.vercel.app/api?username=robcarv&show_icons=true&theme=merko&hide=prs" />
-</a>
-<a href="https://github.com/robcarv">
   <img height=165 align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=robcarv&layout=compact&theme=merko&hide=html" />
 </a>
 
