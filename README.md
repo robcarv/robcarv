@@ -1,8 +1,7 @@
 # 🇮🇪 **Hey   there! I'm Robert**  
 *(aka @chch_changes in the land of leprechauns and broken code)*  
 🛠️ Full-time developer and automation engineer  wizard | Part-time problem crusher
-💼 Currently solving puzzles at a company that starts with I and ends with M (spoiler: it's 🟦🟡)  
-
+💼 Currently solving puzzles at a company that starts with I and ends with M 
 ---
 
 ### ⚙️ **My Toolbox**  
@@ -24,7 +23,7 @@
 - Breaking stuff to call it "testing" (then fixing... eventually)  
 - ML: Trained AI to say "pão de queijo" with perfect accent  
 - Open-source: I github when I gitbored  
-- Solving problems with duct tape solutions 🦸♂️  
+- Solving problems with duct tape solutions 
 
 ---
 
