@@ -55,11 +55,7 @@
 
 <div align="center">
   <a href="https://dublincalling.duckdns.org/public/dublincalling" target="_blank">
-    <img src="https://img.shields.io/badge/🔴_Listen_Live-Dublin_Calling-1DB954?style=for-the-badge&logo=radio&logoColor=white" alt="Listen Live"/>
-  </a>
-  <br>
-  <a href="https://dublincalling.duckdns.org/public/dublincalling" target="_blank">
-    <img src="https://dublincalling.duckdns.org/api/nowplaying/dublincalling" alt="Now Playing" width="0" height="0"/>
+    <img src="https://img.shields.io/badge/-Listen_Live-Dublin_Calling-1DB954?style=for-the-badge&logo=materialdesignicons&logoColor=white" alt="Listen Live"/>
   </a>
   <br>
   <img src="https://dublincalling.duckdns.org/api/nowplaying/dublincalling/art" width="200" style="border-radius: 12px;" alt="Album Art"/>
@@ -109,27 +105,32 @@
 
 Se você curte o que eu faço — a rádio, os bots, os projetos open-source — e quiser ajudar a manter os 🍓 Pis rodando:
 
+<br>
+
 <div align="center">
 
-#### 🇧🇷 **PIX** (Brasil)
-
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020126330014BR.GOV.BCB.PIX0111330518788395204000053039865802BR5901N6001C62070503***63043C9E" width="200" style="border-radius: 12px;" alt="PIX QR Code"/>
-
-```
-00020126330014BR.GOV.BCB.PIX0111330518788395204000053039865802BR5901N6001C62070503***63043C9E
-```
-
-#### 🌍 **Revolut** (International)
-
-<a href="https://revolut.me/robertao" target="_blank">
-  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://revolut.me/robertao" width="200" style="border-radius: 12px;" alt="Revolut QR Code"/>
-</a>
-
-**revolut.me/robertao**
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <strong>🇧🇷 PIX (Brasil)</strong><br><br>
+      <img src="https://raw.githubusercontent.com/robcarv/robcarv/main/pix_qr.png" width="180" style="border-radius: 12px;" alt="PIX QR Code"/><br><br>
+      <sub>Escaneie ou copie a chave abaixo:</sub><br>
+      <code>00020126330014BR.GOV.BCB.PIX0111<br>3305187883952040000530398658<br>02BR5901N6001C62070503***63043C9E</code>
+    </td>
+    <td align="center" width="50%">
+      <strong>🌍 Revolut (International)</strong><br><br>
+      <a href="https://revolut.me/robertao" target="_blank">
+        <img src="https://raw.githubusercontent.com/robcarv/robcarv/main/revolut_qr.png" width="180" style="border-radius: 12px;" alt="Revolut QR Code"/>
+      </a><br><br>
+      <sub>Clique no QR ou acesse:</sub><br>
+      <a href="https://revolut.me/robertao"><code>revolut.me/robertao</code></a>
+    </td>
+  </tr>
+</table>
 
 </div>
 
-Obrigado por apoiar o projeto! 🙌
+<p align="center">Obrigado por apoiar o projeto! 🙌</p>
 
 ---
 
