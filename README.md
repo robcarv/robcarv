@@ -105,6 +105,34 @@
 
 ---
 
+### ☕ **Support the Homelab**
+
+Se você curte o que eu faço — a rádio, os bots, os projetos open-source — e quiser ajudar a manter os 🍓 Pis rodando:
+
+<div align="center">
+
+#### 🇧🇷 **PIX** (Brasil)
+
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=00020126330014BR.GOV.BCB.PIX0111330518788395204000053039865802BR5901N6001C62070503***63043C9E" width="200" style="border-radius: 12px;" alt="PIX QR Code"/>
+
+```
+00020126330014BR.GOV.BCB.PIX0111330518788395204000053039865802BR5901N6001C62070503***63043C9E
+```
+
+#### 🌍 **Revolut** (International)
+
+<a href="https://revolut.me/robertao" target="_blank">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://revolut.me/robertao" width="200" style="border-radius: 12px;" alt="Revolut QR Code"/>
+</a>
+
+**revolut.me/robertao**
+
+</div>
+
+Obrigado por apoiar o projeto! 🙌
+
+---
+
 <div align="center">
   <sub>⚡ Built with 🎵 music, ☕ coffee, and 🍓 Raspberry Pis in Mullingar, Ireland</sub>
   <br>
