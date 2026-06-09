@@ -116,7 +116,7 @@
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=robcarv&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" height="195"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=robcarv&theme=tokyonight&hide_border=true&layout=compact&langs_count=10&hide=html,css,scss" alt="Top Languages" height="195"/>
 </div>
 
 ---
