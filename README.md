@@ -64,8 +64,8 @@
 
 🎬 MEDIA PIPELINE
 ├── Prowlarr        → Indexer manager
-├── Whisparr        → Movie manager
-├── qBittorrent     → Torrent client
+├── Radarr          → Movie manager
+├── qBittorrent     → Download client
 ├── ClamAV          → Daily antivirus scan ✅
 └── Jellyfin        → Media server
 
@@ -86,10 +86,10 @@
 **Pipeline de Mídia — Fluxo:**
 
 ```
-⬇️ qBittorrent → 📁 incomplete/ → ✅ completo
+⬇️ Download → 📁 incomplete/ → ✅ completo
 → 🔒 ClamAV scan → 📁 complete/
-→ 🎬 Whisparr → 📁 library/scenes/
-→ 🖥️ Jellyfin → ✅ apenas filmes completos e verificados
+→ 📁 library/organized/
+→ 🖥️ Jellyfin → ✅ apenas filmes completos
 ```
 
 ---
