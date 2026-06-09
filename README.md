@@ -79,6 +79,20 @@
 
 ---
 
+### 📻 **Now Playing on Dublin Calling**
+
+<div align="center">
+  <a href="https://dublincalling.duckdns.org/public/dublincalling" target="_blank">
+    <img src="https://img.shields.io/badge/-Listen_Live-Dublin_Calling-1DB954?style=for-the-badge&logo=materialdesignicons&logoColor=white" alt="Listen Live"/>
+  </a>
+  <br><br>
+  <img src="https://dublincalling.duckdns.org/api/nowplaying/dublincalling/art" width="200" style="border-radius: 12px;" alt="Album Art"/>
+  <br><br>
+  <img src="https://dublincalling.duckdns.org/api/nowplaying/dublincalling/embed" width="280" style="border-radius: 8px;" alt="Now Playing"/>
+</div>
+
+---
+
 ### 📡 **Connect**
 
 <div align="center">
