@@ -4,7 +4,7 @@
   <h1>🇮🇪 Hey there! I'm Robert 👋</h1>
 
   <a href="https://github.com/robcarv">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1DB954&center=true&vCenter=true&width=600&lines=Homelab+and+Raspberry+Pi+Wizard;Digital+Radio+Broadcaster;Automation+%26+Python+Enthusiast;Music+%2B+Code+%2B+Coffee+%3D+Life!" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=1DB954&center=true&vCenter=true&width=700&lines=Homelab+and+Raspberry+Pi+Wizard;Digital+Radio+Broadcaster;Automation+%26+Python+Enthusiast;55%2B+Services+Monitored+24%2F7;Music+%2B+Code+%2B+Coffee+%3D+Life!" alt="Typing SVG" />
   </a>
 </div>
 
@@ -42,16 +42,59 @@
 <br>
 
 **📍 The Homelab (Mullingar, Ireland):**
-* 🍓 **3x Raspberry Pi Cluster** — Pi 4 (Pi-hole + Docker), Pi 5 (AzuraCast radio), Pi 501 (Hermes Agent)
-* 📻 **dublincalling.duckdns.org** — My digital radio station! Automated playlists, Liquidsoap, Icecast
-* 🐳 **Docker Swarm** — Portainer, Nginx Proxy Manager, Dashy dashboard, Glances monitoring, Duplicati backups
-* 💾 **Automated Backups** — Parallel pigz compression, OneDrive sync, Telegram notifications
-* 📰 **News Bot** — RSS feeds → LSA summarization → TTS audio (Edge-TTS PT / Piper EN) → Telegram daily
-* 🤖 **Hermes Agent** — AI-powered CLI agent running my automation workflows
+
+```
+🌐 INFRASTRUCTURE
+├── 3× Raspberry Pi (Pi4 · Pi5 · Pi501)
+├── TrueNAS Scale · NVMe 10.9TB
+└── Router (192.168.68.1)
+
+📦 ORCHESTRATION
+├── Docker + Docker Compose
+├── Portainer · Glances
+└── Hermes Agent (AI CLI)
+
+🖥️ CORE SERVICES
+├── Dashy           → Central dashboard
+├── UptimeKuma      → 55+ services monitored
+├── Pi-hole         → DNS ad blocker
+├── Nginx Proxy Manager
+├── AzuraCast       → dublincalling.duckdns.org
+└── Wallos          → Subscription manager
+
+🎬 MEDIA PIPELINE
+├── Prowlarr        → Indexer manager
+├── Whisparr        → Movie manager
+├── qBittorrent     → Torrent client
+├── ClamAV          → Daily antivirus scan ✅
+└── Jellyfin        → Media server
+
+🔒 BACKUP & SECURITY
+├── ClamAV (antivírus automático)
+├── Duplicati (containers)
+├── Rsync → TrueNAS
+├── Git push (GitHub)
+└── DuckDNS (dinâmico)
+
+📡 OTHER SERVICES
+├── ChangeDetection → Website monitor
+├── Speedtest Tracker
+├── Discount Bandit
+└── Honeygain (passive income)
+```
+
+**Pipeline de Mídia — Fluxo:**
+
+```
+⬇️ qBittorrent → 📁 incomplete/ → ✅ completo
+→ 🔒 ClamAV scan → 📁 complete/
+→ 🎬 Whisparr → 📁 library/scenes/
+→ 🖥️ Jellyfin → ✅ apenas filmes completos e verificados
+```
 
 ---
 
-### 🎵 **Now Playing on Dublin Calling**
+### 📻 **Now Playing on Dublin Calling**
 
 <div align="center">
   <a href="https://dublincalling.duckdns.org/public/dublincalling" target="_blank">
@@ -101,41 +144,10 @@
 
 ---
 
-### ☕ **Support the Homelab**
-
-Se você curte o que eu faço — a rádio, os bots, os projetos open-source — e quiser ajudar a manter os 🍓 Pis rodando:
-
-<br>
-
 <div align="center">
+  
+*Built with 🍓 Raspberry Pi, ❤️ and ☕*
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <strong>🇧🇷 PIX (Brasil)</strong><br><br>
-      <img src="https://raw.githubusercontent.com/robcarv/robcarv/main/pix_qr.png" width="180" style="border-radius: 12px;" alt="PIX QR Code"/><br><br>
-      <sub>Escaneie ou copie a chave abaixo:</sub><br>
-      <code>00020126330014BR.GOV.BCB.PIX0111<br>3305187883952040000530398658<br>02BR5901N6001C62070503***63043C9E</code>
-    </td>
-    <td align="center" width="50%">
-      <strong>🌍 Revolut (International)</strong><br><br>
-      <a href="https://revolut.me/robertao" target="_blank">
-        <img src="https://raw.githubusercontent.com/robcarv/robcarv/main/revolut_qr.png" width="180" style="border-radius: 12px;" alt="Revolut QR Code"/>
-      </a><br><br>
-      <sub>Clique no QR ou acesse:</sub><br>
-      <a href="https://revolut.me/robertao"><code>revolut.me/robertao</code></a>
-    </td>
-  </tr>
-</table>
+**55+ services · 3 Pis · 10.9TB NVMe · 0 viruses found ✅**
 
-</div>
-
-<p align="center">Obrigado por apoiar o projeto! 🙌</p>
-
----
-
-<div align="center">
-  <sub>⚡ Built with 🎵 music, ☕ coffee, and 🍓 Raspberry Pis in Mullingar, Ireland</sub>
-  <br>
-  <sub>🇮🇪 | 🇧🇷 | 🌍</sub>
 </div>
