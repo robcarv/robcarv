@@ -34,8 +34,8 @@
 ```
 🌐 INFRASTRUCTURE
 ├── Pi4 (192.168.68.102) → Pi-hole, Dashy, NPM, Wallos, Glances
-├── Pi5-108 (192.168.68.108) → AzuraCast, qBittorrent, ClamAV, DuckDNS, Glances
-├── Pi501-117 (192.168.68.117) → Prowlarr, Radarr, UptimeKuma, ChangeDetection, Speedtest, Gallery Downloader
+├── Pi5-108 (192.168.68.108) → AzuraCast, Download Client, ClamAV, DuckDNS, Glances
+├── Pi501-117 (192.168.68.117) → Indexer Mgr, Media Mgr, UptimeKuma, ChangeDetection, Speedtest, Gallery Downloader
 └── TrueNAS Scale (192.168.68.124) → NVMe 10.9TB, Jellyfin, CIFS Shares, 88 movies
 
 📦 ORCHESTRATION
