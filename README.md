@@ -35,7 +35,7 @@
 🌐 INFRASTRUCTURE
 ├── Pi4 (192.168.68.102) → Pi-hole, Dashy, NPM, Wallos, Glances
 ├── Pi5-108 (192.168.68.108) → AzuraCast, qBittorrent, ClamAV, DuckDNS, Glances
-├── Pi501-117 (192.168.68.117) → Prowlarr, Radarr, UptimeKuma, ChangeDetection, Speedtest
+├── Pi501-117 (192.168.68.117) → Prowlarr, Radarr, UptimeKuma, ChangeDetection, Speedtest, Gallery Downloader
 └── TrueNAS Scale (192.168.68.124) → NVMe 10.9TB, Jellyfin, CIFS Shares, 88 movies
 
 📦 ORCHESTRATION
@@ -52,7 +52,8 @@
 ├── AzuraCast       → Dublin Calling web radio (2GB RAM limit)
 ├── Wallos          → Subscription management
 ├── Speedtest Tracker → Network speed monitoring
-└── ChangeDetection → Website change monitor
+├── ChangeDetection → Website change monitor
+└── Gallery Downloader → Self-hosted comic/gallery library manager
 
 🎬 MEDIA PIPELINE
 ├── Prowlarr        → Indexer manager (4 indexers)
@@ -60,6 +61,15 @@
 ├── qBittorrent     → Download client (4 active, 3.5 MB/s)
 ├── ClamAV          → Daily antivirus scan (3GB RAM, 0 threats)
 └── Jellyfin        → Media streaming on TrueNAS
+
+🖼️ GALLERY DOWNLOADER
+├── Backend API (Node.js/Express) → Port 5173
+├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
+├── Python Scraper (asyncio + cloudscraper) → Batch download with rate control
+├── CLI Menu (nhentai-cli.sh) → Search, download, list, info
+├── Batch Manager (nhentai_batch.py) → Rate-limited bulk downloads
+├── Storage → /mnt/truenas_media/nhentai_manga/ (CIFS → TrueNAS)
+└── Docs → github.com/robcarv/backup_raspberry
 
 🔒 BACKUP & SECURITY
 ├── ClamAV (daily scan at 03:00, 0 threats found)
@@ -75,7 +85,7 @@
 ├── Glances on all 3 Pis (CPU, RAM, disk, temperature)
 ├── Pi Health Report (auto score 0-100 for each Pi)
 ├── Torrent health check (every 6h, rechecks stuck torrents)
-├── Whispers health check (every 2h)
+├── Radarr health check (every 2h)
 └── Guardian (prevents OOM by pausing torrents)
 
 🤖 AUTOMATION
