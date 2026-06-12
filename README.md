@@ -66,9 +66,9 @@
 ├── Backend API (Node.js/Express) → Port 5173
 ├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
 ├── Python Downloader (asyncio) → Batch with rate control
-├── CLI Menu → Search, download, list, info
-├── Batch Manager → Rate-limited bulk downloads
-├── Storage → /mnt/truenas_media/gallery_manga/ (CIFS → TrueNAS)
+├── CLI Menu (nhentai-cli.sh) → Search, download, list, info
+├── AllPornComic Support → curl_cffi browser emulation
+├── Storage → /mnt/truenas_media/ (CIFS → TrueNAS)
 └── Docs → github.com/robcarv/backup_raspberry
 
 🔒 BACKUP & SECURITY
