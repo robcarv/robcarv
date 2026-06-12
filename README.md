@@ -56,9 +56,9 @@
 └── Gallery Downloader → Self-hosted comic/gallery library manager
 
 🎬 MEDIA PIPELINE
-├── Prowlarr        → Indexer manager (4 indexers)
-├── Radarr          → Movie manager (88 movies organized)
-├── qBittorrent     → Download client (4 active, 3.5 MB/s)
+├── Indexer Manager
+├── Media Manager
+├── Download Client
 ├── ClamAV          → Daily antivirus scan (3GB RAM, 0 threats)
 └── Jellyfin        → Media streaming on TrueNAS
 
@@ -85,7 +85,7 @@
 ├── Glances on all 3 Pis (CPU, RAM, disk, temperature)
 ├── Pi Health Report (auto score 0-100 for each Pi)
 ├── Torrent health check (every 6h, rechecks stuck torrents)
-├── Radarr health check (every 2h)
+├── Media health check (every 2h)
 └── Guardian (prevents OOM by pausing torrents)
 
 🤖 AUTOMATION
@@ -134,8 +134,8 @@
 | 03:00 daily | ClamAV antivirus scan | Pi5-108 |
 | 03:30 Mon/Wed/Fri | Full backup + health report | Pi5-108 |
 | 04:00 daily | Rsync to TrueNAS | Pi5-108 |
-| 08:00 / 20:00 | NewsBot RSS → Telegram → Push GitHub | Pi501-117 |
-| Every 2h | Radarr health check | Pi501-117 |
+| 08:00 / 20:00 | NewsBot RSS → Telegram → Push GitHub | Pi 501 |
+| Every 2h | Media health check | Pi 501 |
 
 ---
 
