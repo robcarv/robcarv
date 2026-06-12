@@ -65,10 +65,10 @@
 🖼️ GALLERY DOWNLOADER
 ├── Backend API (Node.js/Express) → Port 5173
 ├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
-├── Python Scraper (asyncio + cloudscraper) → Batch download with rate control
-├── CLI Menu (nhentai-cli.sh) → Search, download, list, info
-├── Batch Manager (nhentai_batch.py) → Rate-limited bulk downloads
-├── Storage → /mnt/truenas_media/nhentai_manga/ (CIFS → TrueNAS)
+├── Python Downloader (asyncio) → Batch with rate control
+├── CLI Menu → Search, download, list, info
+├── Batch Manager → Rate-limited bulk downloads
+├── Storage → /mnt/truenas_media/gallery_manga/ (CIFS → TrueNAS)
 └── Docs → github.com/robcarv/backup_raspberry
 
 🔒 BACKUP & SECURITY
