@@ -66,7 +66,7 @@
 ├── Backend API (Node.js/Express) → Port 5173
 ├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
 ├── Python Downloader (asyncio) → Batch with rate control
-├── CLI Menu (nhentai-cli.sh) → Search, download, list, info
+├── CLI Menu (gallery-cli.sh) → Search, download, list, info
 ├── Secondary Source Support → browser emulation downloader
 ├── Storage → /mnt/truenas_media/ (CIFS → TrueNAS)
 └── Docs → github.com/robcarv/backup_raspberry
