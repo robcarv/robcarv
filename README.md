@@ -67,7 +67,7 @@
 ├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
 ├── Python Downloader (asyncio) → Batch with rate control
 ├── CLI Menu (nhentai-cli.sh) → Search, download, list, info
-├── AllPornComic Support → curl_cffi browser emulation
+├── Secondary Source Support → browser emulation downloader
 ├── Storage → /mnt/truenas_media/ (CIFS → TrueNAS)
 └── Docs → github.com/robcarv/backup_raspberry
 
