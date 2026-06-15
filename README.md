@@ -53,7 +53,7 @@
 ├── Wallos          → Subscription management
 ├── Speedtest Tracker → Network speed monitoring
 ├── ChangeDetection → Website change monitor
-└── Gallery Downloader v2 → Multi-source download manager with queue
+└── Gallery Downloader v3 → Multi-source download manager with SQLite queue
 
 🎬 MEDIA PIPELINE
 ├── Indexer Manager
@@ -97,18 +97,19 @@
 
 ---
 
-### 🖼️ **Gallery Downloader v2** — Featured Project
+### 🖼️ **Gallery Downloader v3** — Featured Project
 
-Multi-source download manager with sequential queue, smart cache, and automatic fallback recovery.
+Multi-source download manager with sequential queue, smart cache, automatic fallback, and real-time Web UI.
 
 | Feature | Stack |
 |---|---|
-| **Queue** | In-memory + SQLite persistence, strict FIFO, auto-retry |
-| **Sources** | 3 sources, pluggable via ScraperBase |
-| **Fallback** | 5 strategies (scraper, cloudscraper, curl_cffi, requests, direct) |
-| **Cache** | SQLite TTL cache, incremental merge |
-| **Web UI** | Flask dashboard with real-time SSE events |
-| **Monitoring** | Watchdog auto-restarts workers if stuck |
+| **Queue** | 100% SQLite persistence, strict FIFO, auto-retry (10 attempts) |
+| **Sources** | nhentai API v2 (official) + HTML fallback |
+| **Fallback** | 3 strategies (cloudscraper, curl_cffi, requests) with exponential backoff |
+| **Cache** | In-memory TTL cache (1h) for gallery_info |
+| **Web UI** | Flask backend + Vanilla JS frontend, SSE real-time events |
+| **Service** | Systemd (no Docker), 27MB RAM, auto-restart |
+| **Testing** | Megasuite: 46 tests (latency, burst, regressão, PWA) |
 
 ```mermaid
 graph TB
