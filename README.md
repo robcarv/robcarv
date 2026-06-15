@@ -4,7 +4,7 @@
   <h1>🇮🇪 Robert Carvalho</h1>
 
   <a href="https://github.com/robcarv">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=1DB954&center=true&vCenter=true&width=600&lines=QA+Automation+Engineer;Homelab+%26+Infrastructure+Enthusiast;Python+%2B+Playwright+%2B+Java;55%2B+services+monitored+24%2F7" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=1DB954&center=true&vCenter=true&width=600&lines=QA+Automation+Engineer;Homelab+%26+Infrastructure+Enthusiast;Python+%2B+Playwright+%2B+Java;55%2B+services+monitored+24%2F7;3+Raspberry+Pis+%2B+TrueNAS+Scale" alt="Typing SVG" />
   </a>
 
   <br><br>
@@ -34,12 +34,12 @@
 ```
 🌐 INFRASTRUCTURE
 ├── Pi4 (192.168.68.102) → Pi-hole, Dashy, NPM, Wallos, Glances
-├── Pi5-108 (192.168.68.108) → AzuraCast, Download Client, ClamAV, DuckDNS, Glances
-├── Pi501-117 (192.168.68.117) → Indexer Mgr, Media Mgr, UptimeKuma, ChangeDetection, Speedtest, Gallery Downloader
-└── TrueNAS Scale (192.168.68.124) → NVMe 10.9TB, Jellyfin, CIFS Shares, 88 movies
+├── Pi5-108 (192.168.68.108) → AzuraCast, qBittorrent, ClamAV, DuckDNS, Glances
+├── Pi501-117 (192.168.68.117) → Indexer Mgr, Download Mgr, UptimeKuma, ChangeDetection, Speedtest
+└── TrueNAS Scale (192.168.68.124) → NVMe 10.9TB, Jellyfin, CIFS Shares, 88 media files
 
 📦 ORCHESTRATION
-├── Docker + Docker Compose (25+ containers across 3 Pis)
+├── Docker + Docker Compose (20+ containers across 3 Pis)
 ├── Portainer (visual container management)
 └── Glances (real-time CPU/RAM/disk/temp on all Pis)
 
@@ -53,23 +53,13 @@
 ├── Wallos          → Subscription management
 ├── Speedtest Tracker → Network speed monitoring
 ├── ChangeDetection → Website change monitor
-└── Gallery Downloader → Self-hosted comic/gallery library manager
+└── Gallery Downloader v2 → Multi-source download manager with queue
 
 🎬 MEDIA PIPELINE
 ├── Indexer Manager
-├── Media Manager
-├── Download Client
+├── Download Manager
 ├── ClamAV          → Daily antivirus scan (3GB RAM, 0 threats)
 └── Jellyfin        → Media streaming on TrueNAS
-
-🖼️ GALLERY DOWNLOADER
-├── Backend API (Node.js/Express) → Port 5173
-├── Frontend Web UI (Vue.js/Vite) → Port 8787 (192.168.68.117)
-├── Python Downloader (asyncio) → Batch with rate control
-├── CLI Menu (gallery-cli.sh) → Search, download, list, info
-├── Secondary Source Support → browser emulation downloader
-├── Storage → /mnt/truenas_media/ (CIFS → TrueNAS)
-└── Docs → github.com/robcarv/backup_raspberry
 
 🔒 BACKUP & SECURITY
 ├── ClamAV (daily scan at 03:00, 0 threats found)
@@ -84,9 +74,9 @@
 ├── UptimeKuma (55+ services, 48 UP, instant alerts)
 ├── Glances on all 3 Pis (CPU, RAM, disk, temperature)
 ├── Pi Health Report (auto score 0-100 for each Pi)
-├── Torrent health check (every 6h, rechecks stuck torrents)
+├── Torrent health check (every 6h, rechecks stuck items)
 ├── Media health check (every 2h)
-└── Guardian (prevents OOM by pausing torrents)
+└── Guardian (prevents OOM by pausing downloads)
 
 🤖 AUTOMATION
 ├── NewsBot (cron 08:00, 20:00)
@@ -107,15 +97,42 @@
 
 ---
 
+### 🖼️ **Gallery Downloader v2** — Featured Project
+
+Multi-source download manager with sequential queue, smart cache, and automatic fallback recovery.
+
+| Feature | Stack |
+|---|---|
+| **Queue** | In-memory + SQLite persistence, strict FIFO, auto-retry |
+| **Sources** | 3 sources, pluggable via ScraperBase |
+| **Fallback** | 5 strategies (scraper, cloudscraper, curl_cffi, requests, direct) |
+| **Cache** | SQLite TTL cache, incremental merge |
+| **Web UI** | Flask dashboard with real-time SSE events |
+| **Monitoring** | Watchdog auto-restarts workers if stuck |
+
+```mermaid
+graph TB
+    CLI["CLI Menu"] --> Q["DownloadQueue\n(1 per vez)"]
+    WEB["Web UI :8788"] --> Q
+    Q --> S["Scraper Manager"]
+    S --> N1["Source 1"] & N2["Source 2"] & N3["Source 3"]
+    Q --> DB[(SQLite Cache)]
+    S --> TN["TrueNAS 6TB"]
+```
+
+**Branch v2** — github.com/robcarv/backup_raspberry
+
+---
+
 ### 📊 **System Health**
 
 <div align="center">
 
 | Pi | Status | Score | Uptime | Temp | RAM | Disk | Containers |
 |---|---|---|---|---|---|---|---|
-| **Pi4** | 🟢 Excellent | 100/100 | 1 day | 30°C | 9% | 16% | 5 |
-| **Pi5-108** | 🟢 Excellent | 90/100 | 2h | 48°C | 25% | 64% | 7 |
-| **Pi501-117** | 🟢 Excellent | 75/100 | 1 day | 48°C | 25% | 35% | 12 |
+| **Pi4** | 🟢 Excellent | 100/100 | Up | ~30°C | ~9% | ~16% | 7 |
+| **Pi5-108** | 🟢 Good | 90/100 | Up | ~48°C | ~25% | ~64% | 8 |
+| **Pi501-117** | 🟢 Good | 75/100 | Up | ~48°C | ~25% | ~35% | ~12 |
 
 </div>
 
@@ -127,10 +144,10 @@
 ### 🕐 **Cron Schedule**
 
 | Time | Task | Location |
-|------|------|----------|
+|---|---|---|
 | Every 5min | Guardian (load/RAM/swap check) | Pi5-108 |
 | Every 5min | CIFS auto-mount check | Pi5-108 |
-| Every 6h | Torrent health recheck | Pi5-108 |
+| Every 6h | Health recheck | Pi5-108 |
 | 03:00 daily | ClamAV antivirus scan | Pi5-108 |
 | 03:30 Mon/Wed/Fri | Full backup + health report | Pi5-108 |
 | 04:00 daily | Rsync to TrueNAS | Pi5-108 |
@@ -198,5 +215,4 @@
     <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/robcarv/robcarv/output/github-contribution-grid-snake.svg">
   </picture>
   <br>
-  <em>3 Pis · 55+ services · 10.9TB NVMe · 0 threats · <a href="https://robcarv.github.io">robcarv.github.io</a></em>
 </div>
