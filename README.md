@@ -24,19 +24,23 @@
 
 ## Infrastructure
 
-Homelab com 3 Raspberry Pis + TrueNAS Scale (NVMe 10.9TB):
+Homelab with 3 Raspberry Pis + TrueNAS Scale (NVMe 10.9TB):
 
 | Device | IP | Role |
 |--------|----|------|
 | Pi 4 | 192.168.68.102 | Pi-hole, Nginx Proxy Manager, Wallos, Duplicati |
-| Pi 5 | 192.168.68.108 | AzuraCast (Dublin Calling radio), Gallery v3, Uptime Kuma |
+| Pi 5 | 192.168.68.108 | AzuraCast (Dublin Calling radio), Uptime Kuma |
 | Pi 501 | 192.168.68.117 | Hermes Agent, Dashy, Speedtest Tracker, Discount Bandit |
-| TrueNAS | 192.168.68.124 | NVMe pool 10.9TB, Jellyfin, Immich, Tailscale, Whisparr |
+| TrueNAS | 192.168.68.124 | NVMe pool 10.9TB, Jellyfin, Immich, Tailscale |
 
 **Dashboards:**
 - Dashy: http://192.168.68.117:8200 | http://192.168.68.102:8200
 - Hermes Dashboard: http://192.168.68.117:9119
 - Uptime Kuma: https://uptimehome.duckdns.org/dashboard
+
+**Radio:**
+- [Dublin Calling](https://dublincalling.duckdns.org/public/dublincalling) - Irish independent radio station
+- Request a song: https://t.me/Siteschanges_bot
 
 ---
 
@@ -72,22 +76,22 @@ Homelab com 3 Raspberry Pis + TrueNAS Scale (NVMe 10.9TB):
 
 ## Services
 
-### Media & Entertainment
-- **Dublin Calling** - Irish radio station (AzuraCast on Pi5)
-- **Jellyfin** - Media server (TrueNAS, port 30013)
-- **Gallery v3** - nHentai downloader (Pi5, port 8788)
+### Radio & Entertainment
+- **Dublin Calling** - Irish independent radio station (AzuraCast on Pi5)
+- **Listen live**: https://dublincalling.duckdns.org/public/dublincalling
+- **Jellyfin** - Media server (TrueNAS)
 
 ### Infrastructure
 - **Pi-hole** - DNS ad-blocker (Pi4)
 - **Uptime Kuma** - Service monitoring (Pi5)
 - **Glances** - System monitoring on all Pis (port 61208)
-- **Speedtest Tracker** - Network speed monitoring (Pi501, port 8089)
+- **Speedtest Tracker** - Network speed monitoring (Pi501)
 - **Changedetection** - Website change monitoring (Pi5)
 
 ### Development & DevOps
 - **Hermes Agent** - AI CLI agent (Pi501, dashboard on port 9119)
 - **Portainer** - Docker management (Pi4)
-- **Nginx Proxy Manager** - Reverse proxy (Pi501, port 82)
+- **Nginx Proxy Manager** - Reverse proxy (Pi501)
 - **NewsBot** - RSS news collector with TTS audio (GitHub)
 
 ### Storage & Backup
