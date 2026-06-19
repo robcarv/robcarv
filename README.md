@@ -26,16 +26,16 @@
 
 Homelab with 3 Raspberry Pis + TrueNAS Scale (NVMe 10.9TB):
 
-| Device | IP | Role |
-|--------|----|------|
-| Pi 4 | 192.168.68.102 | Pi-hole, Nginx Proxy Manager, Wallos, Duplicati |
-| Pi 5 | 192.168.68.108 | AzuraCast (Dublin Calling radio), Uptime Kuma |
-| Pi 501 | 192.168.68.117 | Hermes Agent, Dashy, Speedtest Tracker, Discount Bandit |
-| TrueNAS | 192.168.68.124 | NVMe pool 10.9TB, Jellyfin, Immich, Tailscale |
+| Device | Role |
+|--------|------|
+| Pi 4 | Pi-hole, Nginx Proxy Manager, Wallos, Duplicati |
+| Pi 5 | AzuraCast (Dublin Calling radio), Uptime Kuma |
+| Pi 501 | Hermes Agent, Dashy, Speedtest Tracker, Discount Bandit |
+| TrueNAS | NVMe pool 10.9TB, Jellyfin, Immich, Tailscale |
 
 **Dashboards:**
-- Dashy: http://192.168.68.117:8200 | http://192.168.68.102:8200
-- Hermes Dashboard: http://192.168.68.117:9119
+- Dashy: Pi501:8200 / Pi4:8200 (local network)
+- Hermes Dashboard: Pi501:9119 (local network)
 - Uptime Kuma: https://uptimehome.duckdns.org/dashboard
 
 **Radio:**
